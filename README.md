@@ -1,6 +1,6 @@
-# 
+# Effective Vibecoding
 
-
+How to direct an AI coding agent well: scoping tasks, prompting clearly, reviewing what it writes, and staying safely in control the whole time.
 
 Part of the [Yaaddi](https://github.com/yaaddi-courses) course catalog — a
 spaced-repetition flashcard course, ready to build and validate with the
