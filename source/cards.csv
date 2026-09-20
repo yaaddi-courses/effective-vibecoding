@@ -21,7 +21,7 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 140,3,select_blank,exercise,12,Agents shine on ___ tasks.,well-specified|ambiguous|undocumented,0,,,
 141,3,true_false,exercise,12,Grunt work is one place agents save time.,,true,,,
 16,4,true_false,preview,17,Agents are always right when they sound confident.,,false,,,
-17,4,multi_select,main,,Pick weaknesses agents still have.,Ambiguous asks|Hidden context|Confident guesses|Fast typing,0|1|2,cards/card_17.png,,"Ambiguous asks make it guess, and it can't see context you never wrote down or showed it."
+17,4,multi_select,main,,Pick weaknesses agents still have.,Ambiguous asks|Hidden context|Confident guesses|Fast typing,0|1|2,cards/card_17.png,,"Ambiguous asks make it guess, and it can't see context you never wrote down or showed it. A repository is the folder that holds all of your project's code and history."
 18,4,true_false,exercise,17,An agent can see context you never wrote down.,,false,,,It only knows what you show it or what's in the repo — unwritten context stays invisible.
 19,4,select_blank,exercise,17,An agent may sound confident while being ___.,wrong|silent|slow,0,cards/card_19.png,,An agent can sound highly confident even when its underlying information or reasoning is incorrect; this discrepancy between tone and accuracy is a key thing to watch out for.
 20,4,multiple_choice,exercise,17,What causes an agent to guess wrong?,Ambiguous asks|Too detailed|Slow typing,0,,,"The primary cause of an agent guessing wrong is ambiguity in the prompt. When your request is vague, the agent must make assumptions, which are often where errors creep in."
