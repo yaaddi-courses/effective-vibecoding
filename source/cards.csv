@@ -5,18 +5,18 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 4,1,select_blank,exercise,2,Vibecoding directs an agent using ___ language.,natural|binary|assembly,0,,,
 5,1,multiple_choice,exercise,2,What does vibecoding replace line-by-line typing with?,Describing outcomes|Copy-pasting|Guessing,0,,,
 136,1,multiple_choice,exercise,2,Who do you direct?,AI agent|Compiler|Linter,0,,,
-137,1,true_false,exercise,2,Vibecoding means describing what you want.,,true,,,
-6,2,true_false,preview,7,"Vibecoding makes you the director, not the typist.",,true,,,
+137,1,true_false,exercise,2,Vibecoding means describing what you want.,,true,,,"Vibecoding is about conveying the feeling or desired outcome, rather than writing out every single line of code."
+6,2,true_false,preview,7,"Vibecoding makes you the director, not the typist.",,true,,,"As a director, you are guiding the process and defining the vision, leaving the actual typing to someone else."
 7,2,multiple_choice,main,,What is your new job when vibecoding?,Director|Typist|Spectator,0,cards/card_7.png,,As director you describe outcomes and review results — the agent does the actual typing.
-8,2,true_false,exercise,7,A director describes outcomes and reviews results.,,true,,,
-9,2,select_blank,exercise,7,Your job shifts from typist to ___.,director|spectator|debugger,0,,,
-10,2,multiple_choice,exercise,7,What does a director still need to do?,Review results|Type lines|Nothing,0,,,
-138,2,multiple_choice,exercise,7,Who does the typing?,The agent|You|No one,0,,,
-139,2,true_false,exercise,7,Your job shifts to describing outcomes.,,true,,,
-11,3,multiple_choice,preview,12,Agents are best at:,Repetitive boilerplate|Reading minds|Guessing intent,0,,,
+8,2,true_false,exercise,7,A director describes outcomes and reviews results.,,true,,,A director's role is high-level; they define what success looks like by describing the desired outcome and checking if it was achieved.
+9,2,select_blank,exercise,7,Your job shifts from typist to ___.,director|spectator|debugger,0,,,"When you adopt a directorial approach, your focus shifts to being the director who guides the process rather than the person typing every line of code."
+10,2,multiple_choice,exercise,7,What does a director still need to do?,Review results|Type lines|Nothing,0,,,"Even as a director, you must review the results to ensure that what was built actually matches the vision and achieves the desired outcome."
+138,2,multiple_choice,exercise,7,Who does the typing?,The agent|You|No one,0,,,The agent is the one doing the typing because it's an automated system designed to generate and write code for you.
+139,2,true_false,exercise,7,Your job shifts to describing outcomes.,,true,,,"Yes, once the initial setup is done, your role becomes reviewing the results and describing what needs to happen next."
+11,3,multiple_choice,preview,12,Agents are best at:,Repetitive boilerplate|Reading minds|Guessing intent,0,,,"Agents excel at repetitive tasks like boilerplate coding because they follow patterns reliably, unlike guessing or reading minds which require human intuition."
 12,3,multi_select,main,,Pick tasks agents are genuinely good at.,Boilerplate|Refactors|Guessing intent|Unfamiliar APIs,0|1|3,cards/card_12.png,,"This is grunt work: tedious, well-specified tasks agents handle well."
-13,3,true_false,exercise,12,Agents save real time on boilerplate code.,,true,,,
-14,3,select_blank,exercise,12,Agents are strong at mechanical ___ work.,refactor|guessing|planning,0,,,
+13,3,true_false,exercise,12,Agents save real time on boilerplate code.,,true,,,That's right; agents are specifically designed to handle the tedious parts of coding so you don't waste time on them.
+14,3,select_blank,exercise,12,Agents are strong at mechanical ___ work.,refactor|guessing|planning,0,,,"Agents shine at mechanical refactoring, meaning they can systematically clean up and reorganize existing code based on rules."
 15,3,multiple_choice,exercise,12,What kind of work is grunt work?,Tedious|Exciting|Rare,0,,,
 140,3,select_blank,exercise,12,Agents shine on ___ tasks.,well-specified|ambiguous|undocumented,0,,,
 141,3,true_false,exercise,12,Grunt work is one place agents save time.,,true,,,
@@ -53,11 +53,11 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 38,8,true_false,exercise,37,Over-specifying means writing the code yourself in prose.,,true,,,This is correct; over-specifying means describing exactly how the code should look or function using natural language rather than just stating the goal. It's essentially writing pseudocode in paragraphs.
 39,8,select_blank,exercise,37,Too little detail forces the agent to ___.,guess|refuse|wait,0,,,"If you don't provide enough context, the model will try to predict what you meant based on its training data, which often results in incorrect assumptions rather than waiting for clarification."
 40,8,multiple_choice,exercise,37,What's the downside of over-specifying?,Prose coding|Fast results|Less risk,0,,,"Over-specifying often means writing lengthy, descriptive text (prose) instead of concise instructions. This makes the prompt unnecessarily long and cumbersome without adding much value."
-150,8,true_false,exercise,37,Too little detail forces guessing.,,true,,,
-151,8,multiple_choice,exercise,37,What is the right amount of detail?,Enough|Too much|Too little,0,,,
-41,9,true_false,preview,42,One good example beats a long explanation.,,true,,,
-42,9,multiple_choice,main,,What often communicates a pattern faster than a rule?,An example|A rule|Silence,0,cards/card_42.png,,
-43,9,true_false,exercise,42,A good example can beat a written rule.,,true,,,
+150,8,true_false,exercise,37,Too little detail forces guessing.,,true,,,"If you leave out key details, the learner has to guess what you meant rather than understanding the concept directly."
+151,8,multiple_choice,exercise,37,What is the right amount of detail?,Enough|Too much|Too little,0,,,The goal is to provide enough context so the learner understands without being overwhelmed by excessive information.
+41,9,true_false,preview,42,One good example beats a long explanation.,,true,,,"Concrete examples are often much clearer and more memorable than abstract, drawn-out explanations."
+42,9,multiple_choice,main,,What often communicates a pattern faster than a rule?,An example|A rule|Silence,0,cards/card_42.png,,"Seeing an example immediately shows the learner how something works, which is faster than reading a formal definition or rule."
+43,9,true_false,exercise,42,A good example can beat a written rule.,,true,,,"While rules are useful, a well-chosen example makes an abstract concept concrete and much easier to grasp."
 44,9,select_blank,exercise,42,One good ___ can replace a paragraph of rules.,example|apology|guess,0,,,"A single, well-chosen example often demonstrates the required behavior better than pages of abstract rules. An apology or a guess doesn't provide the necessary instructional clarity."
 45,9,multiple_choice,exercise,42,Why do examples work well for agents?,Shows pattern|Takes longer|Adds ambiguity,0,,,"Agents are excellent at identifying and replicating patterns, so providing examples allows them to learn the desired structure or logic implicitly rather than requiring explicit rules."
 152,9,multiple_choice,exercise,42,An example beats a paragraph at what?,Speed|Length|Nothing,0,,,"Examples allow the model to grasp complex instructions quickly by showing rather than telling, making them much more efficient and faster than reading a long paragraph of rules."
@@ -82,18 +82,18 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 59,12,select_blank,exercise,57,"Generated code is a draft, not a ___ answer.",finished|helpful|typed,0,,,It is vital to remember that generated code is a draft and should never be considered a finished answer ready for deployment.
 60,12,multiple_choice,exercise,57,What is the risk of skipping verification?,Bugs ship|Faster delivery|Cleaner code,0,cards/card_60.png,,"The primary risk of skipping verification is shipping bugs, which can cause real-world failures far outweighing any time saved by rushing the process."
 158,12,true_false,exercise,57,Generated code should be trusted untested.,,false,,,Never trust generated code untested; you must always run your own tests because the AI might introduce subtle flaws or vulnerabilities that only rigorous checks will find.
-159,12,select_blank,exercise,57,Treat generated code as a ___ draft.,first|final|fake,0,,,
-61,13,multiple_choice,preview,62,How should you read an agent's diff?,Like reviewer|Skip entirely|Never look,0,,,
+159,12,select_blank,exercise,57,Treat generated code as a ___ draft.,first|final|fake,0,,,"You should treat generated code as a first draft because it requires human oversight for logic and correctness. It's not final, but treating it as fake means you won't trust its structure or implementation."
+61,13,multiple_choice,preview,62,How should you read an agent's diff?,Like reviewer|Skip entirely|Never look,0,,,"Always read an agent's diff like a critical reviewer would, checking the changes for logic gaps and missed edge cases. Skipping it assumes perfection, which is unsafe when dealing with generated code."
 62,13,multiple_choice,main,,How should you read an agent diff?,As reviewer|Skim only|Not ever,0,cards/card_62.png,,"A reviewer checks exactly what changed, not just that something did — ‘looks fine’ isn't enough."
-63,13,true_false,exercise,62,Reviewing a diff means checking what actually changed.,,true,,,
-64,13,select_blank,exercise,62,Read a diff like a ___.,reviewer|typist|bystander,0,,,
-65,13,multiple_choice,exercise,62,What is a weak reason to approve a diff?,Looks fine|Was tested|Was scoped,0,cards/card_65.png,,
-160,13,multiple_choice,exercise,62,What should you check in a diff?,What changed|It exists|File count,0,,,
-161,13,true_false,exercise,62,"Something changed is enough, no need to check what.",,false,,,
-66,14,true_false,preview,67,Code that looks right always works correctly.,,false,,,
+63,13,true_false,exercise,62,Reviewing a diff means checking what actually changed.,,true,,,That is correct; reviewing a diff means focusing specifically on what was added or changed between two versions of the code.
+64,13,select_blank,exercise,62,Read a diff like a ___.,reviewer|typist|bystander,0,,,"You must read it with the critical eye of a reviewer, looking for correctness and potential improvements. A typist only checks spelling, while a bystander doesn't understand the technical context."
+65,13,multiple_choice,exercise,62,What is a weak reason to approve a diff?,Looks fine|Was tested|Was scoped,0,cards/card_65.png,,"Saying 'it looks fine' is weak because code can be visually clean but still harbor subtle bugs or logical flaws. You must approve based on concrete evidence of correctness, not just appearance."
+160,13,multiple_choice,exercise,62,What should you check in a diff?,What changed|It exists|File count,0,,,"A diff specifically shows the differences between two versions, so you must focus on what lines or content were actually modified. Checking if something exists or just counting files doesn't tell you *how* the code was altered."
+161,13,true_false,exercise,62,"Something changed is enough, no need to check what.",,false,,,"No, simply seeing that a file was modified isn't enough; you need to check exactly what changed and if those changes successfully address the intended problem."
+66,14,true_false,preview,67,Code that looks right always works correctly.,,false,,,This is a common assumption—code can look perfectly logical and clean but still fail due to hidden bugs or unhandled edge cases that only appear during execution.
 67,14,select_blank,main,,Looking right and actually ___ are different things.,working|compiling|typing|running,0,cards/card_67.png,,"Looking right and actually working are different things, only running it proves it works."
-68,14,select_blank,exercise,67,Looks right is not the same as ___.,works|typed|fast,0,,,
-69,14,multiple_choice,exercise,67,What proves code actually works?,Running it|Reading it|Trusting it,0,,,
+68,14,select_blank,exercise,67,Looks right is not the same as ___.,works|typed|fast,0,,,"Appearance doesn't guarantee functionality; just because code looks correct on paper, it might still fail when run against real data or unexpected edge cases."
+69,14,multiple_choice,exercise,67,What proves code actually works?,Running it|Reading it|Trusting it,0,,,"The only way to truly prove that code works is by executing it and observing its behavior through testing. Reading it or trusting it relies on assumption, not proof."
 70,14,true_false,exercise,67,Testing yourself is optional if the code looks clean.,,false,,,"Clean-looking code can still fail at runtime, so testing stays necessary."
 162,14,multiple_choice,exercise,67,What proves code trustworthy?,Running it|Reading it|Assuming it,0,,,"The only way to truly prove code trustworthiness is by running it with thorough testing, as static reading can miss runtime errors or edge cases."
 163,14,true_false,exercise,67,Running code confirms it works.,,true,,,
@@ -103,13 +103,13 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 74,15,select_blank,exercise,72,"A hallucination is a made-up, plausible-sounding ___.",answer|typo|delay,0,,,A hallucination refers specifically to an answer—a piece of generated content—that sounds plausible but is entirely made up.
 75,15,multiple_choice,exercise,72,What is an example of a hallucinated detail?,Fake flag|Real function|Correct number,0,cards/card_75.png,,"Since hallucinations are fabrications, the model might invent a fake flag or detail that doesn't actually exist in the system documentation."
 164,15,multiple_choice,exercise,72,What might an agent invent?,Fake API|Real bug|Slower runtime,0,,,An agent could 'hallucinate' by inventing an API endpoint or function call that looks legitimate but doesn't actually connect to any real service.
-165,15,true_false,exercise,72,A hallucination can sound confident.,,true,,,
-76,16,multiple_choice,preview,77,Which action needs more caution?,Deleting branch|Editing file|Renaming file,0,,,
+165,15,true_false,exercise,72,A hallucination can sound confident.,,true,,,"Yes, that's exactly how they are dangerous; they often present false information with absolute certainty, making them incredibly hard to spot."
+76,16,multiple_choice,preview,77,Which action needs more caution?,Deleting branch|Editing file|Renaming file,0,,,"Deleting a branch is the riskiest because it removes an entire line of development history, potentially losing work that hasn't been merged yet."
 77,16,multiple_choice,main,,Which action deserves more caution?,Deleting branch|Editing file|Renaming file,0,cards/card_77.png,,"So can dropping data or force-pushing — those are permanent, unlike an edit you can always undo."
 78,16,true_false,exercise,77,All actions carry the same level of risk.,,false,,,An easily reversible edit and a permanent deletion carry very different risk levels.
-79,16,select_blank,exercise,77,An edit tracked by version control is usually ___.,reversible|permanent|risky,0,,,
-80,16,multiple_choice,exercise,77,What makes an action irreversible?,No return|Slow undo|Big diff,0,,,
-166,16,multiple_choice,exercise,77,What is usually reversible?,Editing a file|Dropping data|Force-push,0,,,
+79,16,select_blank,exercise,77,An edit tracked by version control is usually ___.,reversible|permanent|risky,0,,,"Because version control keeps a complete history of every change, you can always revert to a previous state if the edit turns out to be problematic."
+80,16,multiple_choice,exercise,77,What makes an action irreversible?,No return|Slow undo|Big diff,0,,,"Irreversibility means there is no mechanism or easy way to get back to a previous state, which is fundamentally about whether a 'return' path exists."
+166,16,multiple_choice,exercise,77,What is usually reversible?,Editing a file|Dropping data|Force-push,0,,,"Since version control tracks every change made when you edit a file, this action allows you to commit the change and then easily revert it later if needed."
 167,16,true_false,exercise,77,Force-pushing can overwrite history.,,true,,,"Yes, that's right; a force push completely overwrites the remote branch history, which can cause major headaches for anyone else working on it."
 81,17,true_false,preview,82,"An agent should get just enough access, not more.",,true,,,This follows the principle of least privilege; you only give an agent the minimum permissions necessary to complete its specific task.
 82,17,multiple_choice,main,,How much access should an agent get?,Just enough|Full access|Nothing,0,cards/card_82.png,,"That way, if it makes a mistake, the damage stays contained instead of spreading."
