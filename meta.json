@@ -4,7 +4,7 @@
   "description": "How to direct an AI coding agent well: scoping tasks, prompting clearly, reviewing what it writes, and staying safely in control the whole time.",
   "image": "cover.png",
   "file": "effective-vibecoding.zip",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "tags": [
     "ai",
     "programming",
@@ -16,6 +16,11 @@
       "version": "1.0.0",
       "date": "2026-08-15",
       "notes": "Initial release — 27 decks, 194 cards, each pack with a preview card teaching the concept before its graded main card and practice cards."
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-09-24",
+      "notes": "Rewrote 3 preview true/false card(s) whose answer was false, so every preview statement is true; Wrapped code, commands and file names in backticks so they render as code (3 card(s))."
     }
   ],
   "toc": [
