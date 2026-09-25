@@ -26,3 +26,4 @@ id,title,description,min_level,section,image,section_image
 25,Letting Scope Creep In,"When an eager agent quietly does more than you asked, and why that's a problem.",1,Common Pitfalls,unit25.png,
 26,Building Reusable Prompts and Playbooks,Turning a prompt that worked once into a repeatable process for next time.,1,Leveling Up,unit26.png,
 27,Knowing When Not to Vibecode,"Some problems are faster, safer, or clearer to just solve yourself.",1,Leveling Up,unit27.png,
+28,Recap: Key Terms,Quick matching practice that revisits the key terms from earlier decks.,1,Review,unit28.png,
