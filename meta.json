@@ -4,7 +4,7 @@
   "description": "How to direct an AI coding agent well: scoping tasks, prompting clearly, reviewing what it writes, and staying safely in control the whole time.",
   "image": "cover.png",
   "file": "effective-vibecoding.zip",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "tags": [
     "ai",
     "programming",
@@ -26,6 +26,11 @@
       "version": "1.1.1",
       "date": "2026-09-30",
       "notes": "Code mentioned inside question and answer text (commands, function calls, keywords such as for/None/True, file names, flags) is now marked as code, so it shows in the code font and colors."
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-09-30",
+      "notes": "Added an explanation to 21 card(s) that had none; reworded 1 ordering prompt(s) to say which end comes first."
     }
   ],
   "toc": [
