@@ -18,3 +18,10 @@ APIs,Application programming interfaces: defined ways for one program to ask ano
 README.md,The Markdown file at the top of a project that explains what it is and how to use it.,https://en.wikipedia.org/wiki/README,
 AGENTS.md,A Markdown file of instructions that tells AI coding agents how to work in a project.,https://agents.md/,
 CLAUDE,"CLAUDE.md, the instructions file that Claude Code reads at the start of every session.",https://docs.claude.com/en/docs/claude-code/memory,
+README,A file at the top of a project that explains what it is and how to use it.,https://en.wikipedia.org/wiki/README,24
+LICENSE,"A file stating the legal terms under which others may use, copy and change the project's code.",https://en.wikipedia.org/wiki/Software_license,24
+Prompting,Writing instructions and context for an AI model so it produces the result you want.,https://en.wikipedia.org/wiki/Prompt_engineering,126
+Prompts,The instructions and context you give an AI model to get a response.,https://en.wikipedia.org/wiki/Prompt_engineering,126
+Hallucinations,"Confident but false or invented output from an AI model, such as a function or flag that does not exist.",https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence),71
+Commits,"Saved snapshots of a project's changes in version control, each with a message.",https://git-scm.com/docs/git-commit,87
+Force push,"Pushing that overwrites the remote branch's history with yours, which can destroy teammates' work.",https://git-scm.com/docs/git-push#Documentation/git-push.txt---force,201
