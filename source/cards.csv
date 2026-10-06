@@ -208,3 +208,44 @@ id,unit_id,type,role,related_main_id,prompt,options,correct_index,image,audio,ex
 207,28,match_pairs,exercise,206,Pair every term with its gloss.,CLAUDE.md↔Agent instructions file|Hallucination↔Confident false claim|Losing the thread↔Drifting off context|Scope creep↔Unrequested extra changes,,,,Each term is paired with its plain-language meaning.
 208,28,match_pairs,exercise,206,Which meaning fits each term?,Losing the thread↔Drifting off context|Scope creep↔Unrequested extra changes|Prompt↔Your instructions|Force-push↔Overwrites shared history,,,,Each term is paired with its plain-language meaning.
 209,28,match_pairs,exercise,206,Connect the terms to what they mean.,Prompt↔Your instructions|Force-push↔Overwrites shared history|Boilerplate↔Repetitive setup code|Repo↔Project's code folder,,,,Each term is paired with its plain-language meaning.
+210,1,multiple_choice,exam,,In vibecoding you direct the agent using:,Natural language|Typed syntax|Hand gestures,0,,,You describe what you want instead of typing every line.
+211,2,multiple_choice,exam,,"When vibecoding, your role is the:",Compiler|Director|Typist,1,,,You describe outcomes and review results.
+212,2,true_false,exam,,The agent does the typing and you review the results.,,true,,,"You are the director, not the typist."
+213,3,multiple_choice,exam,,Agents handle repetitive boilerplate:,Well|Poorly|Never,0,,,"It is tedious, well-specified grunt work."
+214,3,multiple_choice,exam,,Which task suits an agent?,Guessing goals|Refactoring|Reading minds,1,,,"Tedious, well-specified tasks are its strength."
+215,4,multiple_choice,exam,,An agent cannot see context you never:,Compiled|Deployed|Wrote down,2,,,Hidden context leads to wrong guesses.
+216,4,true_false,exam,,A confident answer from an agent is always correct.,,false,,,Agents can sound confident and still be wrong.
+217,5,multiple_choice,exam,,A context file stores project:,Invoices|Conventions|Passwords,1,,,"It is written once, upfront."
+218,18,multiple_choice,exam,,"Decide what ""done"" means before you:",Test|Commit|Ask,2,,,Without a target there is nothing to compare the result against.
+219,7,multiple_choice,exam,,Small steps make results easier to:,Check|Delete|Hide,0,,,Verify each step before the next.
+220,8,multiple_choice,exam,,Too little detail makes an agent:,Sleep|Guess|Refuse,1,,,Too much detail turns your request into code written in prose.
+221,9,multiple_choice,exam,,A pattern is communicated faster by an:,Apology|Estimate|Example,2,,,One good example beats a long explanation.
+222,10,multiple_choice,exam,,Asking for a plan first catches:,Wrong assumptions|Typos only|Slow disks,0,,,A mistake in the plan is cheaper to fix than in code.
+223,11,multiple_choice,exam,,A drifting agent is best fixed by:,Waiting|Direct feedback|Starting over,1,,,Correct it in the same conversation.
+224,12,multiple_choice,exam,,Generated code should be treated as a:,Final answer|Guarantee|First draft,2,,,Always check before you trust it.
+225,12,true_false,exam,,Looking fine is enough to trust generated code.,,false,,,Only running and checking it shows that it works.
+226,13,multiple_choice,exam,,Reading a diff like a reviewer means checking:,Nothing|What changed|Title only,1,,,Looks fine is not enough.
+227,14,multiple_choice,exam,,Only running code proves it is:,Pretty|Short|Working,2,,,Looking right and working are different things.
+228,15,multiple_choice,exam,,A hallucination is an invented:,Fact|Folder|Variable,0,,,It can sound just as confident as a correct answer.
+229,16,multiple_choice,exam,,Which action deserves extra caution?,Running tests|Force-pushing|Reading files,1,,,Permanent actions cannot be undone like an edit.
+230,16,multiple_choice,exam,,Risky changes belong on a:,Server|Whiteboard|Branch,2,,,The main version stays untouched until you merge.
+231,18,true_false,exam,,Force-push can permanently overwrite shared history.,,true,,,It discards the commits that were there.
+232,17,multiple_choice,exam,,An agent should get just enough:,Praise|Access|Time,1,,,A mistake then stays contained.
+233,18,multiple_choice,exam,,Frequent commits work like an:,Alarm|Firewall|Undo button,2,,,"You can undo a whole session, not one file."
+234,26,multiple_choice,exam,,Take back the wheel when the agent:,Stalls|Succeeds|Greets you,0,,,Use your own hands instead of prompting again.
+235,20,multiple_choice,exam,,Treat an agent as a literal:,Manager|Partner|Oracle,1,,,"It does exactly what you say, not what you meant."
+236,21,multiple_choice,exam,,An agent code review suits a first:,Release|Meeting|Pass,2,,,It will not replace a human review.
+237,22,multiple_choice,exam,,"Research explores options, implementation writes:",Code|Contracts|Slides,0,,,Be clear about which job you delegate.
+238,23,multiple_choice,exam,,"Over a long session, context can:",Vanish instantly|Drift|Improve,1,,,The agent may start ignoring earlier rules.
+239,24,multiple_choice,exam,,A confident tone proves:,Accuracy|Speed|Nothing,2,,,An agent sounds equally confident right or wrong.
+240,25,multiple_choice,exam,,Scope creep means touching things you did not:,Request|Delete|Compile,0,,,Extra files make the diff harder to trust.
+241,26,multiple_choice,exam,,A working prompt is worth:,Deleting|Saving|Hiding,1,,,The next similar task starts from something proven.
+242,27,multiple_choice,exam,,You might skip vibecoding for a:,Large refactor|New project|One-line fix,2,,,Sometimes solving it yourself is faster and clearer.
+243,5,true_false,exam,,A context file is rewritten for every task.,,false,,,"It is written once, upfront, not rewritten each time."
+244,9,true_false,exam,,A long rule explains a pattern faster than an example.,,false,,,Seeing one example shows how something works.
+245,10,true_false,exam,,A plan can be reviewed before any code exists.,,true,,,That is why asking for a plan first catches mistakes early.
+246,15,true_false,exam,,A hallucination always sounds uncertain.,,false,,,It can sound just as confident as a correct answer.
+247,17,true_false,exam,,An agent should receive full access by default.,,false,,,Give it just enough access so mistakes stay contained.
+248,23,true_false,exam,,Long sessions can make an agent ignore earlier rules.,,true,,,The context drifts and it may lose the thread.
+249,26,true_false,exam,,A working prompt should be rewritten from scratch each time.,,false,,,Saving it gives the next task a proven starting point.
+250,24,true_false,exam,,A confident tone shows an agent is right.,,false,,,Tone proves nothing; check the actual result.
