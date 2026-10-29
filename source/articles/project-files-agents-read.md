@@ -3,39 +3,39 @@
 **Covers:** Repo, CLAUDE.md, CLAUDE, AGENTS.md, README.md, README, LICENSE
 
 ## A new colleague every morning {#overview}
-An AI coding agent starts each session knowing nothing about your project. It cannot see what you decided last week, and it does not know your naming style or which commands run the tests. A human colleague would pick this up over time. An agent needs it written down. A handful of plain text files at the top of your project give it that background, and they help human readers too.
+Picture hiring a skilled colleague who forgets everything overnight. Every morning you would have to explain the project again: how you name things, which command runs the tests, what must never be touched. That is what an AI coding agent is like. It starts each session knowing nothing about your project. A human learns this over time, but an agent needs it written down. A handful of plain text files at the top of your project give it that background, and they help human readers too.
 
 ## Repo {#repo}
-A repo, short for repository, is the folder that holds a whole project: its code, its settings and the full history of changes, tracked by Git. Everything an agent needs to understand the project should be inside it, because that is what the agent can see.
+A repo, short for repository, is the folder that holds a whole project: its code, its settings and the complete history of changes, tracked by Git. Everything the agent needs to understand your project should live inside it, because that is all the agent can see.
 
-Keeping a project in a repo also gives you a safety net. If the agent makes a mess, you can compare against the saved history and go back.
+A repo also gives you a safety net. If the agent makes a mess, you can compare against the saved history and go back.
 
 ## CLAUDE.md {#claude-md}
-`CLAUDE.md` is a text file, written in Markdown, that lists your project's conventions and rules for the Claude Code agent. The agent reads it at the start of each session. Write it once, upfront, and update it when the rules change, instead of repeating the same instructions in every chat.
+`CLAUDE.md` is a text file, written in Markdown, where you list the conventions and rules of your project for the Claude Code agent. The agent reads it at the start of every session. So you write your rules once, and update them when they change, instead of repeating the same instructions in every chat.
 
-Good content is short and concrete: how to run the tests, which folders matter, naming rules, and things never to do ("never edit the generated files"). Vague advice such as "write clean code" adds little. If an agent keeps making the same mistake, add a line to the file.
+What goes in? Short, concrete things: how to run the tests, which folders matter, naming rules, and things never to do, such as "never edit the generated files". Vague advice like "write clean code" adds very little. And if the agent keeps making the same mistake, that is your cue to add a line to the file.
 
 ## CLAUDE {#claude}
-People often say just "CLAUDE" as a short name for that file, as in "put it in CLAUDE". It is the same file. Other tools use their own names, so check which file your agent actually reads.
+You will often hear people say just "CLAUDE", as in "put it in CLAUDE". They mean the same file. Other tools use their own file names, so check which one your agent actually reads.
 
 ## AGENTS.md {#agents-md}
-`AGENTS.md` is a similar Markdown file meant to work with many different coding agents, not only one. It gives the same kind of help: build commands, code style and project rules. If you use more than one tool, one shared file avoids keeping several copies in step.
+`AGENTS.md` is a similar Markdown file, but meant to work with many different coding agents instead of only one. It carries the same kind of help: build commands, code style and project rules. If you use more than one tool, a single shared file saves you from keeping several copies in step.
 
 ## README.md {#readme-md}
-`README.md` is the Markdown file at the top of a project that tells people what it is and how to use it. It is written for humans first: what the project does, how to install it, a short example.
+`README.md` is the Markdown file at the top of a project that tells people what it is and how to use it. It is written for humans first: what the project does, how to install it, and a short example.
 
-An agent reads it too, so it is useful background. Keep the instructions for humans in the README and the rules for agents in the agent file. Mixing them makes both harder to read.
+An agent reads it too, so it is useful background. But keep the two jobs apart: put instructions for humans in the README and rules for agents in the agent file. Mixing them makes both harder to read.
 
 ## README {#readme}
-"README" without the extension means the same thing. Many older projects use plain `README` or `README.txt`. The name is written in capitals so that it appears first in a folder listing.
+"README" without the extension means the same thing. Many older projects use a plain `README` or `README.txt`. The name is written in capitals so that it shows up first in a folder listing.
 
 ## LICENSE {#license}
-A `LICENSE` file states the legal terms under which others may use, copy and change your code. Without one, the default in most countries is that nobody else has any right to reuse it. Common choices are MIT and Apache 2.0, which are permissive, and the GPL, which requires that changes be shared under the same terms.
+A `LICENSE` file states the legal terms under which others may use, copy and change your code. Here is the point many beginners miss: without one, the default in most countries is that nobody else has any right to reuse your code. Common choices are MIT and Apache 2.0, which are permissive, and the GPL, which requires that changes be shared under the same terms.
 
-If an agent writes code for you, you remain the owner of the project and the one who chooses the license.
+If an agent writes code for you, you still own the project, and you are the one who chooses the license.
 
 ## A worked example {#example}
-A small `CLAUDE.md` for a web project could look like this:
+Here is a small `CLAUDE.md` for a web project:
 
 ```markdown
 # Project rules
@@ -46,17 +46,17 @@ A small `CLAUDE.md` for a web project could look like this:
 - Do not add new dependencies without asking.
 ```
 
-Check the file against four questions:
+Let's test it with four questions.
 
 1. Does it say how to verify work? Yes, the test command.
 2. Does it name no-go areas? Yes, `dist/`.
 3. Does it set a style? Yes, quotes and indentation.
 4. Does it limit risky actions? Yes, no new dependencies.
 
-Four short lines already prevent the most common surprises. The README for the same project would instead describe what the app does and how to install it.
+Four short lines already prevent the most common surprises. The README of the same project would do a different job: describe what the app does and how to install it.
 
 ## A common mistake {#mistake}
-Writing a very long rules file. Long files are skipped or half-remembered, and they go out of date. Keep it short, and add a rule only when a mistake has happened twice. A second mistake is leaving secrets such as passwords in any of these files, since they usually end up in a public repo.
+A common slip is writing a very long rules file. Long files get skipped or half-remembered, and they go out of date. Keep it short, and add a rule only when a mistake has happened twice. Another slip is leaving secrets such as passwords in any of these files, since they usually end up in a public repo.
 
 ## Key points {#key-points}
 - A repo holds the project and its history, and it is all the agent can see.

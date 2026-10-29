@@ -3,7 +3,7 @@
 **Covers:** Version control, Branch, Commit, Force-push, Force push
 
 ## Why you want an undo for the whole session {#overview}
-An agent can change dozens of files in one request. If you do not like the result, undoing it by hand is slow, and if you have already built more on top of it, it is nearly impossible. Version control gives you a reliable undo for the entire project, and a few habits make it work well with an agent.
+Imagine an agent changes thirty files in one request, and you do not like the result. Undoing that by hand is slow. And if you have already built more on top of it, it is nearly impossible. What you want is an undo button for the entire project, and that is exactly what version control gives you. In this article, we look at how it works and at a few habits that make it fit well with an agent.
 
 ## Version control {#version-control}
 Version control is a system, most often Git, that records every change to your project over time. You can see what changed, who changed it and why, and you can return to any earlier state. It turns a risky experiment into a safe one, because going back costs seconds.
@@ -18,18 +18,18 @@ For agent sessions, ask the agent to work on its own branch. The main line stays
 ## Commit {#commit}
 A commit is a saved snapshot of your project with a short message describing the change. Each commit is a point you can return to.
 
-Commit in small steps: after each working change, not at the end of the day. Each commit is an undo point, and small ones are easy to review and easy to reverse. Write messages that say what changed and why, such as "Add city lookup, handle unknown city".
+So commit in small steps, after each working change, and not only at the end of the day. Small commits are easy to review and easy to reverse. Write messages that say what changed and why, such as "Add city lookup, handle unknown city".
 
 ## Force-push {#force-push}
-A force-push is a push that overwrites the shared copy of a branch with your local version, discarding whatever commits were there before. A normal push is refused if it would lose someone's work. A force push skips that safety check.
+A force-push overwrites the shared copy of a branch with your local version, and throws away whatever commits were there before. A normal push is refused when it would lose someone's work. A force push skips that safety check.
 
-It has legitimate uses, but it is dangerous on a branch other people use, because their work can vanish. Never let an agent do it without your explicit approval. If you must, the safer form is `--force-with-lease`, which refuses when someone else has pushed in the meantime.
+It has legitimate uses, but on a branch that other people use it is dangerous, because their work can vanish. So never let an agent do it without your explicit approval. If you must, use the safer form, `--force-with-lease`, which refuses when someone else has pushed in the meantime.
 
 ## Force push {#force-push-spaced}
-You will also see the spelling without the hyphen. It means the same thing and carries the same risk. Treat any request to "force" a push as an action to stop and think about.
+You will also see the spelling without the hyphen. It means the same thing and carries the same risk. Whenever you see a request to "force" a push, treat it as a signal to stop and think.
 
 ## A worked example {#example}
-A safe routine for one agent session:
+Here is a safe routine for one agent session:
 
 ```bash
 git switch main
@@ -42,15 +42,15 @@ git commit -m "Add search box"
 git diff main
 ```
 
-Now compare two endings:
+Now let's compare two endings.
 
 1. **It went well.** You review `git diff main`, run the tests and merge the branch. The history shows each small step.
-2. **It went badly.** The agent broke the layout in the third step. You return to the second commit with `git reset --hard HEAD~1` and lose only one step. If you have not committed, you delete the branch and begin again with nothing lost on main.
+2. **It went badly.** The agent broke the layout in the third step. You go back to the second commit with `git reset --hard HEAD~1` and lose only one step. If you had not committed yet, you would delete the branch and start over, with nothing lost on main.
 
 Without version control, the second ending means trying to remember what the agent changed. With it, the undo takes a few seconds.
 
 ## A common mistake {#mistake}
-Letting an agent accumulate one huge uncommitted change. If it is wrong, you can only accept all of it or none of it. Commit often to keep your options open. A second mistake is running commands such as `git reset --hard` or a force push without reading what they do, just because an agent suggested them.
+A common slip is letting the agent pile up one huge uncommitted change. If it turns out wrong, your only options are to accept all of it or none of it. Commit often to keep your options open. Another slip is running something like `git reset --hard` or a force push without reading what it does, just because an agent suggested it.
 
 ## Key points {#key-points}
 - Version control records every change and lets you go back to any earlier state.
