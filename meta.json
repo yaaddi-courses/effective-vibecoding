@@ -4,7 +4,7 @@
   "description": "How to direct an AI coding agent well: scoping tasks, prompting clearly, reviewing what it writes, and staying safely in control the whole time.",
   "image": "cover.png",
   "file": "effective-vibecoding.zip",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "tags": [
     "ai",
     "programming",
@@ -46,6 +46,11 @@
       "version": "1.1.4",
       "date": "2026-10-29",
       "notes": "Cards: review fixes. Practice and pack cards now cover their planned keywords, and a few prompts, options and explanations no longer use terms taught later."
+    },
+    {
+      "version": "1.1.5",
+      "date": "2026-10-29",
+      "notes": "Wording fixes so cards do not use terms before they are taught and practice cards mention their topic."
     }
   ],
   "toc": [
